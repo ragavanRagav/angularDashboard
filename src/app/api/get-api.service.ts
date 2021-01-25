@@ -9,7 +9,7 @@ export class GetApiService {
   constructor(private http: HttpClient) { }
   // Function for making api request
   apiCall(){
-    return this.http.get<any[]>('https://corona.lmao.ninja/v2/continents?yesterday=true&sort');
+    return this.http.get<any[]>('https://cors-anywhere.herokuapp.com/https://nestdashboard.herokuapp.com/');
   }
 
 }
