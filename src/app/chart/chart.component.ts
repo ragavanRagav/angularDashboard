@@ -19,7 +19,7 @@ export class ChartComponent implements OnInit {
     this.api.apiCall().subscribe((data)=>{
       console.warn(data);
       this.chartData.push(data);
-      this.chartData.forEach((e: any) => {
+      data.forEach((e: any) => {
         this.barData.push(e.cases);
         this.charLables.push(e.continent);
         this.doughnutData.push(e.deaths);
