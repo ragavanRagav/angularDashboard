@@ -24,6 +24,13 @@ export class ChartComponent implements OnInit {
         this.charLables.push(e.continent);
         this.doughnutData.push(e.deaths);
       });
+      // for(let i in data){
+      //     this.barData.push(data[i].cases);
+      //     this.charLables.push(data[i].continent);
+      //     this.doughnutData.push(data[i].deaths);
+      //     console.log(data[i]);
+          
+      // }
     })
   }
 
